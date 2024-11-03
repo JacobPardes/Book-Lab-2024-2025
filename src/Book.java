@@ -20,8 +20,13 @@ public class Book
       //first letter is a consanant and the second letter is a vowel 
     else if (vowels.IndexOf(first) < 0 && vowels.IndexOf(second) >= 0)
              {
-               pWord = word.substring(1,word.length() + first + "ay")
+               pWord = word.substring(1,word.length()) + first + "ay";
     }
+   else if (vowels.IndexOf(second) < 0 && vowels.IndexOf(first) < 0)
+   {
+      pWord = word.Substring(2,word.length()) + first + second + "ay";
+
+   }
 
     
   
