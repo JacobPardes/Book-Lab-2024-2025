@@ -8,8 +8,22 @@ public class Book
 {
   public String pigLatin(String word)
   {
+  String vowels = "aeiou";
+    String first = word.substring(0,1);
+    String second = word.substring(1,2);
+    String pWord = "";
 
+    //first letter is a vowel 
+    if (vowels.idexOf(Character.toLowerCase(word.charAt(0))) != -1){
+     pWord = word + "yay";
   }
+      //first letter is a consanant and the second letter is a vowel 
+    else if (vowels.IndexOf(first) < 0 && vowels.IndexOf(second) >= 0)
+             {
+               pWord = word.substring(1,word.length() + first + "ay")
+    }
+
+    
   
   public int endPunctuation(String word)  //return the index of where the punctuation is at the end of a String. If it is all punctuation return 0, if there is no punctuation return -1
   {
